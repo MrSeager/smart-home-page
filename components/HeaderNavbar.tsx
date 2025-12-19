@@ -1,16 +1,18 @@
+import Link from "next/link";
+
 export default function HeaderNavbar () {
     return (
-        <header className="max-w-[120rem] w-full bg-[#1E5AFA]">
+        <header className="w-full">
             <nav className="px-5 py-5">
                 <div className="grid grid-cols-3">
-                    <div className="flex gap-3">
-                        <button type="button">Home</button>
-                        <button type="button">About</button>
-                        <button type="button">Testimonials</button>
-                        <button type="button">Contact</button>
+                    <div className="flex gap-5 justify-center items-center">
+                        <Link href='/'>Home</Link>
+                        <Link href='/'>About</Link>
+                        <Link href='/'>Testimonials</Link>
+                        <Link href='/'>Contact</Link>
                     </div>
-                    <h1 className="text-[40px] font-bold text-center">smartHome</h1>
-                    <div className="flex gap-3 justify-end">
+                    <h1 className="text-[40px] font-bold text-center items-center">smartHome</h1>
+                    <div className="flex gap-5 justify-center">
                         <button type="button">Login</button>
                         <button type="button">Sign up</button>
                     </div>
