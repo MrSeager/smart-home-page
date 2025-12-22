@@ -1,5 +1,4 @@
 //Components
-import Image from "next/image";
 import HeaderNavbar from "@/components/HeaderNavbar";
 import HomeMain from "@/components/HomeMain";
 
@@ -10,7 +9,7 @@ export default function Home() {
   // buttons: #000F37
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white select-none">
       <div className="mx-auto flex flex-col w-full max-w-[120rem] items-center justify-center font-sans gap-5
                       bg-gradient-to-b from-[#1E5AFA] from-[47rem] via-transparent via-[47rem]">
         <HeaderNavbar />

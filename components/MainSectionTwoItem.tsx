@@ -30,8 +30,8 @@ export default function MainSectionTwoItem({ order1, order2, img, title, par }: 
                     className="relative z-10 mx-auto scale-190 pointer-events-none"
                 />
             </div>
-            <div className={`flex flex-col ${order2} ms-[25%] items-start gap-5 justify-center lg:pe-[25%]`}>
-                <h2 className="font-semibold text-base/12 text-[40px]">{title}</h2>
+            <div className={`flex flex-col ${order2} ms-[20%] items-start gap-5 justify-center lg:pe-[25%]`}>
+                <h2 className="font-semibold text-base/10 text-[40px]">{title}</h2>
                 <p className="text-[#575757] lg:w-90">{par}</p>
                 <button 
                     type="button" 
