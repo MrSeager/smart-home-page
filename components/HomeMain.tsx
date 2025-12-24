@@ -6,6 +6,7 @@ import MainSectionFour from "./MainSectionFour";
 import MainSectionFive from "./MainSectionFive";
 import MainSectionSix from "./MainSectionSix";
 import MainSectionSeven from "./MainSectionSeven";
+import FooterNav from "./FooterNav";
 
 export default function HomeMain() {
     return (
@@ -17,6 +18,7 @@ export default function HomeMain() {
             <MainSectionFive />
             <MainSectionSix />
             <MainSectionSeven />
+            <FooterNav />
         </main>
     );
 }
