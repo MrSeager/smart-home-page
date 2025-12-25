@@ -1,13 +1,16 @@
 'use client'
 //Components
+import Link from "next/link";
 import { useState } from "react";
 import LinkButton from "./LinkButton";
+//Icons
+import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 
 export default function HeaderNavbar () {
     const [open, setOpen] = useState<boolean>(false);
 
     return (
-        <header className="w-full">
+        <header className="w-full sticky top-0 z-50 bg-[#1E5AFA] rounded-b-[25px]">
             <nav className="p-5">
                 <div className="grid grid-cols-2 lg:grid-cols-3">
                     <div className="hidden lg:flex gap-5 justify-center items-center">
@@ -52,14 +55,14 @@ export default function HeaderNavbar () {
                 </div>
             </nav>
             <div 
-                className={`z-100 fixed inset-0 bg-[#1E5AFA] transition-opacity duration-300 ${open ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}`} 
+                className={`z-100 flex flex-col justify-between fixed inset-0 bg-[#1E5AFA] transition-opacity duration-300 ${open ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}`} 
                 onClick={() => setOpen(false)}
             >
                 <div className="flex justify-between items-center px-5">
                     <h1 className="text-[35px] font-bold text-start items-center">smartHome</h1>
                     <button 
                         type="button"
-                        className="md:hidden text-[35px] justify-self-end" 
+                        className="lg:hidden text-[35px] justify-self-end" 
                         onClick={() => setOpen(true)}
                     >
                         ✕
@@ -90,6 +93,45 @@ export default function HeaderNavbar () {
                             name={'Sign up'}
                             link={'/'}
                         />
+                </div>
+                
+                <div className="rounded rounded-5 p-3 flex items-center justify-center gap-5 ">
+                    <Link 
+                        href='/' 
+                        className="p-2 rounded rounded-5 duration-500 
+                                hover:bg-white hover:text-[#1E5AFA] hover:scale-110 hover:shadow-xl
+                                focus:bg-white focus:text-[#1E5AFA] focus:scale-110 focus:shadow-xl
+                                active:bg-white active:text-[#1E5AFA] active:scale-110 active:shadow-xl"
+                    >
+                        <FaFacebookF size={25} />
+                    </Link>
+                    <Link 
+                        href='/' 
+                        className="p-2 rounded rounded-5 duration-500 
+                                hover:bg-white hover:text-[#1E5AFA] hover:scale-110 hover:shadow-xl
+                                focus:bg-white focus:text-[#1E5AFA] focus:scale-110 focus:shadow-xl
+                                active:bg-white active:text-[#1E5AFA] active:scale-110 active:shadow-xl"
+                    >
+                        <FaInstagram size={25} />
+                    </Link>
+                    <Link 
+                        href='/' 
+                        className="p-2 rounded rounded-5 duration-500 
+                                hover:bg-white hover:text-[#1E5AFA] hover:scale-110 hover:shadow-xl
+                                focus:bg-white focus:text-[#1E5AFA] focus:scale-110 focus:shadow-xl
+                                active:bg-white active:text-[#1E5AFA] active:scale-110 active:shadow-xl"
+                    >
+                        <FaTwitter size={25} />
+                    </Link>
+                    <Link 
+                        href='/' 
+                        className="p-2 rounded rounded-5 duration-500 
+                                hover:bg-white hover:text-[#1E5AFA] hover:scale-110 hover:shadow-xl
+                                focus:bg-white focus:text-[#1E5AFA] focus:scale-110 focus:shadow-xl
+                                active:bg-white active:text-[#1E5AFA] active:scale-110 active:shadow-xl"
+                    >
+                        <FaLinkedinIn size={25} />
+                    </Link>
                 </div>
             </div>
         </header>
