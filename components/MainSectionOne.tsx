@@ -4,8 +4,8 @@ import Link from "next/link";
 
 export default function MainSectionOne () {
     return (
-        <div className="flex flex-col items-center py-5 gap-3 mb-5">
-            <h1 className="mb-5 text-[60px] font-bold text-center text-base/12">
+        <div id="section-1" className="scroll-mt-24 flex flex-col items-center pt-[8rem] gap-3 mb-5">
+            <h1 className="mb-5 text-[65px] font-bold text-center text-base/12">
                 Smart Home<br />
                 Application
             </h1>
@@ -16,7 +16,7 @@ export default function MainSectionOne () {
                 width={1200}
                 height={600}
             />
-            <div className="flex gap-5">
+            <div className="flex gap-5 px-10">
                 <Link 
                     href='/'
                     className="shadow-sm duration-500 hover:shadow-2xl focus:shadow-2xl"

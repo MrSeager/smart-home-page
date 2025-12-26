@@ -1,6 +1,6 @@
 export default function MainSectionSeven () {
     return (
-        <div className="my-5 grid grid-cols-3 mt-15 bg-[#1E5AFA] py-15 px-20 rounded rounded-[15px] max-w-[65rem]
+        <div id="section-7" className="scroll-mt-24 my-5 grid grid-cols-3 mt-15 bg-[#1E5AFA] py-15 px-20 rounded rounded-[15px] max-w-[65rem]
                         bg-[url('/images/Union.png')] bg-no-repeat bg-[right_30px_bottom_0px] bg-[length:160px_auto]">
             <div className="col-span-2 flex flex-col gap-5">
                 <h4 className="text-[35px] font-semibold">Subscribe to get updates</h4>

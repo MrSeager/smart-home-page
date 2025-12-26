@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function MainSectionSix () {
     return (
-        <div className="grid grid-cols-2 max-w-[90rem] h-[50rem]">
+        <div id="section-6" className="scroll-mt-24 grid grid-cols-2 max-w-[90rem] h-[50rem]">
             <div className="flex flex-col justify-center gap-10 ps-5">
                 <h3 className="font-bold text-[75px] text-[#313131] text-base/17">Download<br />App</h3>
                 <p className="text-[#575757] lg:w-[75%]">Wisdom new and valley answer. Contented it so is discourse recommend. Man its upon him call mile. An pasture he himself believe ferrars besides cottage.</p>

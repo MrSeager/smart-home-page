@@ -9,9 +9,10 @@ interface MainSectionFourItemProps {
 
 export default function MainSectionFourItem ({ par, img, head1, head2 }: MainSectionFourItemProps) {
     return (
-        <div className="border border-[#E7EBEE] bg-[#FAFAFA] rounded rounded-[15px] flex flex-col justify-around gap-10 p-15 duration-500
+        <div className="border border-[#E7EBEE] bg-[#FAFAFA] rounded rounded-[15px] flex flex-col justify-around gap-5 md:gap-10 p-5 md:p-15 duration-500
                         hover:border-white hover:bg-white hover:shadow-2xl
-                        focus:border-white focus:bg-white focus:shadow-2xl">
+                        focus:border-white focus:bg-white focus:shadow-2xl
+                        active:border-white active:bg-white active:shadow-2xl">
             <p className="text-[#5F7285] italic">{par}</p>
             <div className="flex gap-3">
                 <div className="relative w-15 h-15 rounded-full overflow-hidden">

@@ -10,7 +10,7 @@ export default function HeaderNavbar () {
     const [open, setOpen] = useState<boolean>(false);
 
     return (
-        <header className="w-full sticky top-0 z-50 bg-[#1E5AFA] rounded-b-[25px]">
+        <header className="w-full fixed top-0 z-50 bg-[#1e59fa60] rounded-b-[25px]">
             <nav className="p-5">
                 <div className="grid grid-cols-2 lg:grid-cols-3">
                     <div className="hidden lg:flex gap-5 justify-center items-center">

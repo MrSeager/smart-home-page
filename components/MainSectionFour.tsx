@@ -4,10 +4,10 @@ import MainSectionFourItem from "./MainSectionFourItem";
 
 export default function MainSectionFour () {
     return (
-        <div className="flex flex-col items-center gap-3 mb-5">
-            <h2 className="text-center font-bold text-[75px] text-[#313131]">Testimonials</h2>
+        <div id="section-4" className="px-5 scroll-mt-24 flex flex-col items-center gap-3 mb-5">
+            <h2 className="text-center font-bold text-[55px] md:text-[65px] text-[#313131]">Testimonials</h2>
             <p className="text-center text-[#575757] lg:w-[50%]">Wisdom new and valley answer. Contented it so is discourse recommend. Man its upon him call mile. An pasture he himself believe ferrars besides cottage.</p>
-            <div className="grid grid-cols-2 gap-3 max-w-[1400px]">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-3">
                 <MainSectionFourItem
                     par={'our company, we do ongoing research with our target audience. This includes 30-45 minute phone interview. It was difficult to conduct the interview, really listen, and ask good follow up questions'}
                     img={'/images/3ca1f97757c6e0c327d249d182bed7cb93ac2f78.png'}

@@ -2,10 +2,10 @@ import MainSectionThreeItem from "./MainSectionThreeItem";
 
 export default function MainSectionThree () {
     return (
-        <div className="flex flex-col items-center gap-3 text-center mt-25">
-            <h2 className="font-bold text-[75px] text-[#313131]">Our Clients</h2>
-            <p className="text-[#575757] lg:w-[50%]">Wisdom new and valley answer. Contented it so is discourse recommend. Man its upon him call mile. An pasture he himself believe ferrars besides cottage.</p>
-            <div className="grid grid-cols-4">
+        <div id="section-3" className="scroll-mt-24 flex flex-col items-center gap-3 text-center mt-25">
+            <h2 className="font-bold text-[65px] text-[#313131] text-base/15">Our Clients</h2>
+            <p className="text-[#575757] lg:w-[50%] px-3">Wisdom new and valley answer. Contented it so is discourse recommend. Man its upon him call mile. An pasture he himself believe ferrars besides cottage.</p>
+            <div className="grid grid-cols-2 md:grid-cols-4">
                 <MainSectionThreeItem
                     img={'/images/Logo.png'}
                 />

@@ -11,7 +11,7 @@ export default function MainSectionFiveItem ({ head, par }: { head: string, par:
             className={`w-full text-[#575757] border rounded-[15px] cursor-pointer transition-all duration-500
                         ${isOpen ? "shadow-2xl bg-white border-white" : "border-[#E7EBEE] bg-[#FAFAFA]"}`}
         >
-            <div className="flex gap-3 items-center px-5 py-3">
+            <div className="flex gap-3 items-center p-2 md:px-5 md:py-3">
                 <div className="relative w-[55px] h-[55px] flex items-center justify-center">
                     <span
                         className={`absolute text-[55px] transition-all duration-300
