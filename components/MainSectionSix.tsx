@@ -4,10 +4,10 @@ import Link from "next/link";
 
 export default function MainSectionSix () {
     return (
-        <div id="section-6" className="scroll-mt-24 grid grid-cols-2 max-w-[90rem] h-[50rem]">
-            <div className="flex flex-col justify-center gap-10 ps-5">
-                <h3 className="font-bold text-[75px] text-[#313131] text-base/17">Download<br />App</h3>
-                <p className="text-[#575757] lg:w-[75%]">Wisdom new and valley answer. Contented it so is discourse recommend. Man its upon him call mile. An pasture he himself believe ferrars besides cottage.</p>
+        <div id="section-6" className="scroll-mt-24 grid grid-cols-1 md:grid-cols-2 h-[50rem] px-5">
+            <div className="flex flex-col justify-center gap-10 ps-5 order-2 md:order-1">
+                <h3 className="font-bold text-[45px] md:text-[65px] text-[#313131] text-base/17">Download App</h3>
+                <p className="text-base/5 text-[#575757] lg:w-[75%]">Wisdom new and valley answer. Contented it so is discourse recommend. Man its upon him call mile. An pasture he himself believe ferrars besides cottage.</p>
             <div className="flex gap-5">
                 <Link 
                     href='/'
@@ -33,7 +33,7 @@ export default function MainSectionSix () {
                 </Link>
             </div>
             </div>
-            <div className='relative overflow-visible flex justify-center items-center'>
+            <div className='relative overflow-visible flex justify-center items-center order-1 md:order-2'>
                 <Image 
                     src={'/images/874bce4b3796c0c83c52001b54afa8d36f050e0b.png'}
                     alt="img"

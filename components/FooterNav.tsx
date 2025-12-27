@@ -4,7 +4,7 @@ import FooterNavItem from "./FooterNavItem";
 export default function FooterNav () {
     return (
         <div className="mt-5 flex flex-col gap-5">
-            <div className="grid grid-cols-4 text-[#575757] gap-15 px-15">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-[#575757] gap-15 px-5 md:px-10 lg:px-15">
                 <div className="flex flex-col gap-5">
                     <h5 className="text-[#313131] font-bold text-[30px]">smartHome</h5>
                     <p className="text-base/4">Automate your entire healthcare hiring, onboarding and compliance with a true technology platform.</p>
@@ -56,7 +56,7 @@ export default function FooterNav () {
                 />
             </div>
             <div className="py-5 bg-[#000F37]">
-                <h6 className="text-white text-center text-[20px]">Copyright &copy; 2021 all rights reserved smartHome</h6>
+                <h6 className="text-white text-center text-[15px] md:text-[20px]">Copyright &copy; 2021 all rights reserved smartHome</h6>
             </div>
         </div>
     );

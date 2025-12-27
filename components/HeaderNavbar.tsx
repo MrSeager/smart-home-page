@@ -1,16 +1,26 @@
 'use client'
 //Components
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import LinkButton from "./LinkButton";
 //Icons
 import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 
 export default function HeaderNavbar () {
     const [open, setOpen] = useState<boolean>(false);
+    const [isScrolled, setIsScrolled] = useState<boolean>(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsScrolled(window.scrollY > 10);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
 
     return (
-        <header className="w-full fixed top-0 z-50 bg-[#1e59fa60] rounded-b-[25px]">
+        <header className={`w-full max-w-[120rem] fixed top-0 z-50 duration-500 ${isScrolled ? "bg-[#1e59fa60]" : "bg-transparent"} rounded-b-[25px]`}>
             <nav className="p-5">
                 <div className="grid grid-cols-2 lg:grid-cols-3">
                     <div className="hidden lg:flex gap-5 justify-center items-center">

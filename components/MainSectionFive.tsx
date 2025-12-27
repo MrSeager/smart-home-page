@@ -7,7 +7,7 @@ export default function MainSectionFive () {
 
     return (
         <div id="section-5" className="scroll-mt-24 px-5 flex flex-col items-center gap-3 lg:mb-5">
-            <h3 className="text-center font-bold text-[75px] text-[#313131]">FAQ&apos;s</h3>
+            <h3 className="text-center font-bold text-[65px] text-[#313131]">FAQ&apos;s</h3>
             <div className="w-full flex flex-col gap-5 max-w-[600px]">
                 <MainSectionFiveItem
                     head={'Chamber reached do he nothing be?'}

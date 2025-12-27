@@ -38,8 +38,13 @@ export default function HomeMain() {
     }
 
     return (
-        <main className="w-full flex-1 overflow-hidden flex flex-col gap-5 items-center">
-            <div className="fixed right-5 top-1/2 -translate-y-1/2 flex flex-col gap-3 z-50">
+        <main className="w-full flex-1 overflow-hidden flex flex-col gap-5 items-center
+                        bg-no-repeat
+                        [background-image:url('/images/Vector332.png'),url('/images/Decorator.png'),url('/images/Vector334.png'),url('/images/Decorator-1.png'),url('/images/Vector334.png'),url('/images/Decorator-2.png')]
+                        [background-position:right_1rem_top_49rem,left_0rem_top_65rem,right_0rem_top_50rem,right_0rem_top_200rem,right_0rem_top_280rem,left_0rem_top_320rem]
+                        "
+        >
+            <div className="fixed right-5 top-1/2 -translate-y-1/2 flex flex-col gap-3 z-40">
                 <button type="button" onClick={() => scrollToSection("up")}
                     className={`w-10 h-10 bg-white text-black flex items-center justify-center shadow duration-500 hover:shadow-xl hover:scale-105`}
                 >
